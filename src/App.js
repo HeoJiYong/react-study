@@ -2,22 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let contents = 'test string';
+  let myStyle = {color:'red', fontSize:'50px'}
+
+  function 함수(){
+    return 100;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="black-nav">
+        <div style={myStyle}>개발 Blog</div>
+      </div>
+      <img src={logo}></img>
+      <h4>{contents}</h4>
     </div>
   );
 }
